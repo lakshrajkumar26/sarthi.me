@@ -14,7 +14,7 @@
     margin :50px auto;
     padding:30px;
     border-raiud :10px;
-    background-color :#fefefe;
+    background :#fefefe;
     box-shadow :subtle;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align :center;
@@ -49,4 +49,45 @@ button:disabled {
     background:#f0f8ff;
     border-radius:10px;
     
+}
+.result-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #b2ebf2;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.result-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #37474f;
+}
+
+.result-card p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+.result-card span.emoji {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+@keyframes : fadeIn{
+    from{
+        opacity :0;
+        transform : translateY(10px);
+    }
+    to{
+        opacity:0;
+        transform : translateY(0);
+    }
 }
